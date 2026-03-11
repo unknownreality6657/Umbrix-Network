@@ -84,6 +84,10 @@ Umbrix Network is currently in the **early planning and architecture phase**.
 
 Development and design discussions are happening within the Umbrix community.
 
+See the project roadmap here:
+
+docs/ROADMAP.md
+
 ---
 
 ## Community
