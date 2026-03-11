@@ -69,6 +69,16 @@ Development and design discussions are happening within the Umbrix community.
 
 ---
 
+## Community
+
+Join the Umbrix community on Discord:
+
+https://discord.gg/YOURINVITELINK
+
+Website: https://umbrix.shadowsofcreation.dev
+
+---
+
 ## Organization
 
 Umbrix Network is developed by **Shadows of Creation**.
