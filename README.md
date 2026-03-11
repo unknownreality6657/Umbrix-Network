@@ -1,4 +1,17 @@
-# Umbrix Network
+<p align="center">
+  <img src="docs/images/umbrix-banner.png" alt="Umbrix Network Banner" width="700"/>
+</p>
+
+<h1 align="center">Umbrix Network</h1>
+
+<p align="center">
+  <a href="https://discord.gg/7kRtnfXtej">
+    <img src="https://img.shields.io/discord/000000000000000000?label=Discord&logo=discord&color=5865F2">
+  </a>
+  <img src="https://img.shields.io/badge/status-planning-blue">
+  <img src="https://img.shields.io/badge/platform-modular-informational">
+  <img src="https://img.shields.io/badge/community-driven-purple">
+</p>
 
 Umbrix Network is a modular collaboration platform developed under the **Shadows of Creation** studio.
 
@@ -26,7 +39,7 @@ Umbrix Network aims to bring these systems together into a unified platform desi
 
 ## Core Philosophy
 
-Umbrix is built around a few core principles:
+Umbrix is built around a few core principles.
 
 ### Modularity
 Communities should not be forced to use features they do not need.
@@ -75,7 +88,8 @@ Join the Umbrix community on Discord:
 
 https://discord.gg/7kRtnfXtej
 
-Website: https://umbrix.shadowsofcreation.dev
+Website:  
+https://umbrix.shadowsofcreation.dev
 
 ---
 
