@@ -1,0 +1,26 @@
+{
+  "id": "umbrix.chat",
+  "name": "Chat",
+  "version": "0.1.0",
+  "author": "Shadows of Creation",
+  "description": "Real-time communication module for Umbrix.",
+  "icon": "message-circle",
+  "entry": {
+    "ui": "index.tsx",
+    "background": "background.ts"
+  },
+  "navigation": {
+    "label": "Chat",
+    "icon": "message-circle",
+    "order": 10
+  },
+  "permissions": [
+    "storage.read",
+    "storage.write",
+    "network.client"
+  ],
+  "features": {
+    "ui": true,
+    "background": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "umbrix.projects",
+  "name": "Projects",
+  "version": "0.1.0",
+  "author": "Shadows of Creation",
+  "description": "Project planning and collaboration tools.",
+  "icon": "folder-kanban",
+  "entry": {
+    "ui": "index.tsx"
+  },
+  "navigation": {
+    "label": "Projects",
+    "icon": "folder-kanban",
+    "order": 20
+  },
+  "permissions": [
+    "storage.read",
+    "storage.write"
+  ],
+  "features": {
+    "ui": true,
+    "background": false
+  }
+}

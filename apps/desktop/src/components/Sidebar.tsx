@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+import type { UmbrixModuleManifest } from "@umbrix/shared"
 import { getRegisteredModules } from "../core/modules/registry"
 
 interface SidebarProps {
@@ -6,9 +8,19 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ activePage, setActivePage }: SidebarProps) {
-  const modules = getRegisteredModules()
-    .filter((module) => module.navigation)
-    .sort((a, b) => (a.navigation?.order ?? 999) - (b.navigation?.order ?? 999))
+  const [modules, setModules] = useState<UmbrixModuleManifest[]>([])
+
+  useEffect(() => {
+  async function loadModules() {
+    const loadedModules = await getRegisteredModules()
+
+    const navigableModules = loadedModules.filter((module) => module.navigation)
+
+    setModules(navigableModules)
+  }
+
+  loadModules()
+}, [])
 
   return (
     <div
@@ -24,18 +36,29 @@ export default function Sidebar({ activePage, setActivePage }: SidebarProps) {
       <h2 style={{ marginTop: 0 }}>Umbrix</h2>
 
       <nav style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <button onClick={() => setActivePage("hub")}>Hub</button>
+        <button
+          onClick={() => setActivePage("hub")}
+          style={{ fontWeight: activePage === "hub" ? "bold" : "normal" }}
+        >
+          Hub
+        </button>
 
         {modules.map((module) => (
           <button
             key={module.id}
             onClick={() => setActivePage(module.id)}
+            style={{ fontWeight: activePage === module.id ? "bold" : "normal" }}
           >
             {module.navigation?.label}
           </button>
         ))}
 
-        <button onClick={() => setActivePage("settings")}>Settings</button>
+        <button
+          onClick={() => setActivePage("settings")}
+          style={{ fontWeight: activePage === "settings" ? "bold" : "normal" }}
+        >
+          Settings
+        </button>
       </nav>
     </div>
   )
