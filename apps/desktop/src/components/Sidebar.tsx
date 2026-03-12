@@ -1,6 +1,11 @@
 import { getRegisteredModules } from "../core/modules/registry"
 
-export default function Sidebar() {
+interface SidebarProps {
+  activePage: string
+  setActivePage: (page: string) => void
+}
+
+export default function Sidebar({ activePage, setActivePage }: SidebarProps) {
   const modules = getRegisteredModules()
     .filter((module) => module.navigation)
     .sort((a, b) => (a.navigation?.order ?? 999) - (b.navigation?.order ?? 999))
@@ -19,13 +24,18 @@ export default function Sidebar() {
       <h2 style={{ marginTop: 0 }}>Umbrix</h2>
 
       <nav style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <button>Hub</button>
+        <button onClick={() => setActivePage("hub")}>Hub</button>
 
         {modules.map((module) => (
-          <button key={module.id}>{module.navigation?.label}</button>
+          <button
+            key={module.id}
+            onClick={() => setActivePage(module.id)}
+          >
+            {module.navigation?.label}
+          </button>
         ))}
 
-        <button>Settings</button>
+        <button onClick={() => setActivePage("settings")}>Settings</button>
       </nav>
     </div>
   )

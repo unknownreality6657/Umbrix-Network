@@ -1,4 +1,4 @@
-import type { UmbrixModuleManifest } from "./types"
+import type { UmbrixModuleManifest } from "@umbrix/shared"
 
 const mockModules: UmbrixModuleManifest[] = [
   {

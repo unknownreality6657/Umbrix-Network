@@ -6,9 +6,7 @@ settings:
 
 importers:
 
-  .: {}
-
-  apps/desktop:
+  .:
     dependencies:
       '@tauri-apps/api':
         specifier: ^2
@@ -16,9 +14,6 @@ importers:
       '@tauri-apps/plugin-opener':
         specifier: ^2
         version: 2.5.3
-      '@umbrix/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
       react:
         specifier: ^19.1.0
         version: 19.2.4
@@ -44,8 +39,6 @@ importers:
       vite:
         specifier: ^7.0.4
         version: 7.3.1
-
-  packages/shared: {}
 
 packages:
 
