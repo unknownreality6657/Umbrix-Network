@@ -7,7 +7,7 @@
 <p align="center">
 
 [![Discord](https://img.shields.io/discord/1444043510683668633?label=Discord&logo=discord)](https://discord.gg/7kRtnfXtej)
-![Status](https://img.shields.io/badge/status-planning-blue)
+![Status](https://img.shields.io/badge/status-building-yellow)
 ![Platform](https://img.shields.io/badge/platform-modular-informational)
 ![Community](https://img.shields.io/badge/community-driven-purple)
 ![Stars](https://img.shields.io/github/stars/ShadowsOfCreation/Umbrix-Network)
